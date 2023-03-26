@@ -47,7 +47,7 @@ while(True):
                 engine.say("Pesquisando");
                 engine.runAndWait()
             
-            elif(re.search(r'\b' + "estudar odonto" + r'\b',format(frase))):
+            elif(re.search(r'\b' + "estudar Odonto" + r'\b',format(frase))):
                 webbrowser.open("https://manu-studies.netlify.app")
                 engine.say("Vamos lá");
                 engine.runAndWait()
