@@ -1,11 +1,11 @@
-import speech_recognition as sr
+import speech_recognition as sr #pip install SpeechRecognition
 import re
 import webbrowser
-import pyttsx3
-from googlesearch import search
-import requests
-from bs4 import BeautifulSoup
-from PIL import Image
+import pyttsx3 #pip install pyttsx3
+from googlesearch import search #pip install googlesearch-python
+import requests #pip install request
+from bs4 import BeautifulSoup #pip install bs4
+from PIL import Image #pip install Pillow
 
 nome = ""
 
@@ -64,7 +64,7 @@ while(True):
 
             elif(re.search(r'\b' + "baixar" + r'\b',format(frase))):
                 run = True
-                directory = "C:/Users/adm/Desktop/PDF"
+                directory = "C:/Users/adm/Desktop/Teste"
                 print('')
                 search = (frase)
                 print('')
@@ -135,11 +135,11 @@ while(True):
                 engine.runAndWait()
 
                 images = [
-                    Image.open("C:/Users/adm/Desktop/PDF/" + f)
+                    Image.open("C:/Users/adm/Desktop/Teste/" + f)
                     for f in [(frase)+"_0.png", (frase)+"_1.png", (frase)+"_2.png", (frase)+"_3.png", (frase)+"_4.png", (frase)+"_5.png", (frase)+"_6.png", (frase)+"_7.png", (frase)+"_8.png", (frase)+"_9.png"]
                 ]
 
-                pdf_path = "C:/Users/adm/Desktop/PDF/Seu_PDF.pdf"
+                pdf_path = "C:/Users/adm/Desktop/Teste/Seu_PDF.pdf"
                     
                 images[0].save(
                     pdf_path, "PDF" ,resolution=100.0, save_all=True, append_images=images[1:]
