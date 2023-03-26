@@ -1,4 +1,4 @@
-import speech_recognition as sr #pip install SpeechRecognition
+import speech_recognition as sr #pip install SpeechRecognition / pip install pyaudio
 import re
 import webbrowser
 import pyttsx3 #pip install pyttsx3
